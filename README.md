@@ -33,6 +33,11 @@ CNN的模型图：
 还有一个原因是这个项目的写法，并不适合初学者，数据的准备和测试不太方便，这里进行了简单的修改。
 
 
+**为了在低计算力的地方进行训练，原项目的验证码为四位数，这里改为1位数：**
+
+
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/number.jpg)
+
 先说一下配置：
 ====
 
