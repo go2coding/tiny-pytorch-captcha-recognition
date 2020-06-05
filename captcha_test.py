@@ -31,8 +31,11 @@ def main():
         total += labels.size(0)
         if(predict_label == true_label):
             correct += 1
+        else:
+            print('\033[31m%s --> %s'%(true_label,predict_label ))
+        if(total%20==0):
+            print('\033[0m%s --> %s'%(true_label,predict_label ))
         if(total%200==0):
-            print('Test Accuracy of the model on the %d test images: %f %%' % (total, 100 * correct / total))
             break
     print('Test Accuracy of the model on the %d test images: %f %%' % (total, 100 * correct / total))
 
