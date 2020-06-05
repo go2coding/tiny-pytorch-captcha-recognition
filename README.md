@@ -5,12 +5,12 @@ CNN的原理这里就不重点介绍了，需要的可以参考：https://toward
 CNN的模型图：
 =========
 
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/1_vkQ0hXDaQv57sALXAJquxA.jpeg)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/1_vkQ0hXDaQv57sALXAJquxA.jpeg)
 
 
 图片字体识别的过程：
 
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/1_uAeANQIOQPqWZnnuH-VEyw.jpeg)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/1_uAeANQIOQPqWZnnuH-VEyw.jpeg)
 
 
 修改
@@ -21,9 +21,9 @@ CNN的模型图：
 
 对于这个深度学习的项目，本身来说并没有特别好的机器来跑训练数据，在我这台 处理器为：i5-3570 3.20GHz的电脑上，跑了两天多的时间，达到的效果并不好，识别为为20%左右。
 
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/20200605101002.png)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200605101002.png)
 
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/20200605101025.png)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200605101025.png)
 
 我想可能也有很多人和我的情况一样，在学完了机器学习的算法后，想跑跑其他的项目，但是机子的性能又不允许。
 
@@ -53,7 +53,7 @@ ImageCaptcha库(pip install captcha)、 Pytorch(参考官网http://pytorch.org)
 	
 ====
 
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/20200605103409.png)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200605103409.png)
 
 
 
@@ -121,8 +121,8 @@ ImageCaptcha库(pip install captcha)、 Pytorch(参考官网http://pytorch.org)
 
 验证码识别率展示
 ========
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/number.png)
-![](https://raw.githubusercontent.com/dee1024/pytorch-captcha-recognition/master/docs/number2.png)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/number.png)
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/number2.png)
 
 
 快速开始
