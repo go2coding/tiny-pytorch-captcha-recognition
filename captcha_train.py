@@ -17,6 +17,7 @@ def main():
     optimizer = torch.optim.Adam(cnn.parameters(), lr=learning_rate)
 
     # Train the Model
+    min_loss = 1.0
     train_dataloader = my_dataset.get_train_data_loader()
     for epoch in range(num_epochs):
         for i, (images, labels) in enumerate(train_dataloader):
@@ -31,12 +32,11 @@ def main():
             optimizer.step()
             if (i+1) % 10 == 0:
                 print("epoch:", epoch, "step:", i, "loss:", loss.item())
-            if (i+1) % 100 == 0:
+            if min_loss > loss.item():
+                print("epoch:", epoch, "step:", i, "loss:", loss.item())
                 torch.save(cnn.state_dict(), "./model.pkl")   #current is model.pkl
+                min_loss = loss.item()
                 print("save model")
-        print("epoch:", epoch, "step:", i, "loss:", loss.item())
-    torch.save(cnn.state_dict(), "./model.pkl")   #current is model.pkl
-    print("save last model")
 
 if __name__ == '__main__':
     main()
