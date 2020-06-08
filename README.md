@@ -22,7 +22,7 @@ CNN的模型图：
 
 这个项目是基于 https://github.com/dee1024/pytorch-captcha-recognition 的修改，修改的原因：
 
-对于兴冲冲的我，拿到了这个项目，就开始训练数据，跑了两天多的时间，达到的效果并不好，识别仅仅为20%左右。
+对于兴冲冲的我，拿到了这个项目，就开始训练数据，跑了两天多的时间，达到的效果并不好，识别准确率仅仅为20%左右。
 
 ![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200605101002.png)
 
