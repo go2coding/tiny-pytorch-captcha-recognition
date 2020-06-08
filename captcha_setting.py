@@ -11,7 +11,7 @@ MAX_CAPTCHA = 1
 
 # 图像大小
 IMAGE_HEIGHT = 60
-IMAGE_WIDTH = 60
+IMAGE_WIDTH = 40 * MAX_CAPTCHA
 
 TRAIN_DATASET_PATH = 'dataset' + os.path.sep + 'train'
 TEST_DATASET_PATH = 'dataset' + os.path.sep + 'test'

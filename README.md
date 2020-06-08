@@ -22,18 +22,29 @@ CNN的模型图：
 
 这个项目是基于 https://github.com/dee1024/pytorch-captcha-recognition 的修改，修改的原因：
 
-对于这个深度学习的项目，本身来说并没有特别好的机器来跑训练数据，在我这台 处理器为：i5-3570 3.20GHz的电脑上，跑了两天多的时间，达到的效果并不好，识别为为20%左右。
+对于兴冲冲的我，拿到了这个项目，就开始训练数据，跑了两天多的时间，达到的效果并不好，识别仅仅为20%左右。
 
 ![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200605101002.png)
 
 ![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200605101025.png)
+
+我想有两个方面的原因：
+
+1.我的计算机太烂了，处理器：i5-3570 3.20GHz，跑数据太慢。
+
+2.我的训练样本太少了。
+
 
 我想可能也有很多人和我的情况一样，在学完了机器学习的算法后，想跑跑其他的项目，但是机子的性能又不允许。
 
 还有一个原因是这个项目的写法，并不适合初学者，数据的准备和测试不太方便，这里进行了简单的修改。
 
 
-**为了在低计算力的地方进行训练，原项目的验证码为四位数，这里改为1位数：**
+修改识别的难度：原项目识别4个（数字和字母）。首先，把难度降到最低试试。修改`captcha_setting.py` 把参数 MAX_CAPTCHA 改为1。
+
+
+
+**为了在低计算力的地方进行训练，原项目的验证码为四位数，这里改为1位数：（相当于手写数字识别）**
 
 
 ![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/number.jpg)
@@ -46,11 +57,13 @@ CNN的模型图：
 环境：
 ====
 
-Python 3.8.2
+- Python 3.8.2
 
-python 2.7的我也试过，pytorch出现了一大堆的错误，建议不要使用。
+> python 2.7的我也试过，pytorch出现了一大堆的错误，建议不要使用。
 
-ImageCaptcha库(pip install captcha)、 Pytorch(参考官网http://pytorch.org)
+- ImageCaptcha库(pip install captcha)
+
+- Pytorch(参考官网http://pytorch.org)
 
 
 运行的结果：
@@ -90,6 +103,11 @@ ImageCaptcha库(pip install captcha)、 Pytorch(参考官网http://pytorch.org)
     python captcha_test.py
     ```
     可以在控制台，看到模型的准确率（如 95%） ，如果准确率较低，回到步骤一，生成更多的图片集合再次训练
+
+可以改变`captcha_setting.py` 中 `MAX_CAPTCHA`的大小，来提高识别的难度。
+
+**在MAX_CAPTCHA为3的情况下，10w训练样本是足够的，超过3的话，需要增加训练样本的个数。**
+	
 	
 其它
 ===
