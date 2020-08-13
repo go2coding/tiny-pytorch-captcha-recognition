@@ -74,6 +74,12 @@ CNN的模型图：
 	pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
 
+	
+先看看准确率高不高
+====
+
+用默认的训练模型，看看测试的结果怎么样。
+
 运行的结果：
 
 
