@@ -65,6 +65,14 @@ CNN的模型图：
 
 - Pytorch(参考官网http://pytorch.org)
 
+到官网，根据自己实际的配置选择，
+
+![](https://raw.githubusercontent.com/go2coding/tiny-pytorch-captcha-recognition/master/docs/20200813131209.png)
+
+安装命令就很简单了：
+
+	pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
 
 运行的结果：
 
