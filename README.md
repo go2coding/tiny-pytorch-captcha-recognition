@@ -99,23 +99,28 @@ CNN的模型图：
 如何学习
 ====
 
-- 生成验证码__
+- 生成验证码
 
     ```bash
     python captcha_gen.py
     ```
+	
 这个地方有修改过，运行后训练数据生成10w张，测试和预测各生成1000张。
 
-- 训练模型__
+- 训练模型
+
     ```bash
     python captcha_train.py
     ```
+	
     使用步骤一生成的验证码图集合用CNN模型（在 catcha_cnn_model 中定义）进行训练，训练完成会生成文件 model.pkl
 
-- 测试模型__
+- 测试模型
+
     ```bash
     python captcha_test.py
     ```
+	
     可以在控制台，看到模型的准确率（如 95%） ，如果准确率较低，回到步骤一，生成更多的图片集合再次训练
 
 可以改变`captcha_setting.py` 中 `MAX_CAPTCHA`的大小，来提高识别的难度。
